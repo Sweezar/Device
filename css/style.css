@@ -1746,3 +1746,37 @@ body {
 .modal-delivery-form-submit {
   z-index: 2;
 }
+
+/* Попап модального окна */
+.quantity-info-popup {
+  position: absolute;
+  top: 28px;
+  left: -13px;
+  width: 162px;
+  padding: 19px;
+  background: #000000;
+  color: #FFFFFF;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.quantity-info-popup::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background-image: url(../img/modal-window-tail.svg);
+  top: -5px;
+  right: 47px;
+}
+
+.quantity-info-popup p {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.popup-close {
+  display: none;
+}
