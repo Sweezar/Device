@@ -149,6 +149,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .header-button {
@@ -301,23 +303,98 @@ body {
 
 /* кнопка каталога товаров в хедере */
 .catalog-toggler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border: none;
   background-color: inherit;
   padding: 0;
-  width: 293px;
+  width: 297px;
   height: 50px;
   text-align: start;
   position: relative;
+  z-index: 2;
 }
 
-.catalog-toggler::after {
+.catalog-toggler-btn-icon {
+  width: 46px;
+  height: 46px;
+  display: block;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.3;
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-toggler-btn-icon::before,
+.catalog-toggler-btn-icon::after {
   content: '';
+  display: block;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
   position: absolute;
-  background-image: url(../img/catalog-btn.svg);
-  width: 50px;
-  height: 50px;
-  right: 0px;
-  top: 0px;
+  top: 22px;
+  left: 15px;
+}
+
+.catalog-toggler-btn-icon::after {
+  transform: rotate(90deg);
+}
+
+.catalog-toggler:hover .catalog-toggler-btn-icon,
+.catalog-toggler:active .catalog-toggler-btn-icon {
+  opacity: 1;
+}
+
+.catalog-toggler-active .catalog-toggler-btn-icon::after {
+  display: none;
+}
+
+/* Попап каталога */
+.catalog-popup {
+  position: absolute;
+  top: 101px;
+  left: -60px;
+  width: 1040px;
+  height: 120px;
+  background-color: #FFE17F;
+  padding: 33px 60px 27px 60px;
+}
+
+.catalog-popup-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.catalog-popup-item {
+  margin-right: 50px;
+}
+
+.catalog-popup-section-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-popup-section-item {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-item-link {
+  text-decoration: none;
+  color: #000000;
 }
 
 /* список ДОСТАВКА, ГАРАНТИЯ, КОНТАКТЫ */

@@ -15,7 +15,7 @@
     <div class="header-container">
       <form class="user-menu-search">
         <input class="search-input" type="search" placeholder="Поиск по сайту" name="search">
-        <button type="submit" class="search-button">Найти</button>
+        <button type="submit" class="search-button"><span>Найти</span></button>
       </form>
 
       <button class="login-button header-button" type="button">Войти</button>
@@ -23,7 +23,44 @@
       <button class="compare-button header-button" type="button">Сравнить</button>
       <button class="cart-button header-button" type="button"><span class="cart-counter">2</span>Корзина</button>
 
-      <button class="button catalog-toggler">Каталог товаров</button>
+      <button class="button catalog-toggler">
+        <span>Каталог товаров</span>
+        <div class="catalog-toggler-btn-icon"></div>
+      </button>
+      <div class="catalog-popup popup-close">
+        <ul class="catalog-popup-list">
+          <li class="catalog-popup-item">
+            <ul class="catalog-popup-section-list">
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Виртуальная реальность</a>
+              </li>
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Моноподы для cелфи</a>
+              </li>
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Экшн-камеры</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-popup-item">
+            <ul class="catalog-popup-section-list">
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Фитнес-браслеты</a>
+              </li>
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Умные часы</a>
+              </li>
+            </ul>
+          </li>
+          <li class="catalog-popup-item">
+            <ul class="catalog-popup-section-list">
+              <li class="catalog-popup-section-item">
+                <a class="popup-item-link" href="">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <ul class="menu-list">
         <li class="menu-list-item"><a class="button" href="">Доставка</a></li>
         <li class="menu-list-item"><a class="button" href="">Гарантия</a></li>
@@ -282,5 +319,6 @@
 
     </div>
   </footer>
+  <script src="./js/main.js"></script>
 </body>
 </html>
