@@ -301,6 +301,95 @@ body {
   line-height: 21px;
 }
 
+/* поповер корзины */
+.cart-popup {
+  width: 320px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #000000;
+  color: #FFFFFF;
+  min-height: 200px;
+  position: absolute;
+  top: 37px;
+  right: -75px;
+  z-index: 1;
+  padding-bottom: 20px;
+}
+
+.cart-popup::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 6px;
+  background-image: url(../img/modal-window-tail.svg);
+  top: -5px;
+  right: 153px;
+}
+
+.cart-items-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cart-item {
+  display: flex;
+  padding: 20px;
+  columns: 39px auto 10px;
+}
+
+.cart-item-title {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-left: 23px;
+  width: min-content;
+}
+
+.cart-item-remove-button {
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: inherit;
+  position: relative;
+  background-image: url(../img/close-btn.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.cart-popup-inner-wrapper {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: space-between;
+  background-color: #1A1A1A;
+}
+
+.cart-popup p {
+  margin: 0;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 23px;
+}
+
+.cart-link {
+  margin: 20px;
+  margin-bottom: 0;
+  display: block;
+  height: 35px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
 /* кнопка каталога товаров в хедере */
 .catalog-toggler {
   display: flex;

@@ -23,11 +23,37 @@
       <button class="compare-button header-button" type="button">Сравнить</button>
       <button class="cart-button header-button" type="button"><span class="cart-counter">2</span>Корзина</button>
 
+      <div class="cart-popup popup-close">
+        <h2 class="visually-hidden">Корзина</h2>
+        <ul class="cart-items-list">
+          <li class="cart-item">
+            <img class="cart-item-img" src="./img/products/product-2-small.png" width="39px" height="43px" alt="Любительская селфи-палка">
+            <p class="cart-item-title">Любительская селфи-палка</p>
+            <button class="cart-item-remove-button" type="button">
+              <span class="visually-hidden">Удалить из корзины</span>
+            </button>
+          </li>
+          <li class="cart-item">
+            <img class="cart-item-img" src="./img/products/product-2-1-small.png" width="39px" height="43px" alt="Профессиональная селфи-палка">
+            <p class="cart-item-title">Профессиональная селфи-палка</p>
+            <button class="cart-item-remove-button" type="button">
+              <span class="visually-hidden">Удалить из корзины</span>
+            </button>
+          </li>
+        </ul>
+        <div class="cart-popup-inner-wrapper">
+          <p>Товаров: <span class="goods-count">2</span></p>
+          <p>Сумма: <span class="goods-sum">2000</span> ₽</p>
+        </div>
+        <a class="cart-link" href="">Открыть корзину</a>
+      </div>
+
       <button class="button catalog-toggler">
         <span>Каталог товаров</span>
         <div class="catalog-toggler-btn-icon"></div>
       </button>
       <div class="catalog-popup popup-close">
+        <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalog-popup-list">
           <li class="catalog-popup-item">
             <ul class="catalog-popup-section-list">
