@@ -335,7 +335,6 @@ body {
 .cart-item {
   display: flex;
   padding: 20px;
-  columns: 39px auto 10px;
 }
 
 .cart-item-title {
