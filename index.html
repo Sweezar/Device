@@ -291,14 +291,25 @@
     <div class="services-container">
     <section class="services">
       <ul class="services-list">
-        <li class="button services-list-item services-list-item-current">доставка</li>
-        <li class="button services-list-item">гарантия</li>
-        <li class="button services-list-item">кредит</li>
+        <li class="button services-list-item services-list-item-current" data-services="delivery">доставка</li>
+        <li class="button services-list-item" data-services="guarantee">гарантия</li>
+        <li class="button services-list-item" data-services="credit">кредит</li>
       </ul>
       <div class="services-list-wrapper">
-        <div class="services-list-item-description">
+        <div class="services-list-item-description services-description-current"  data-services="delivery">
           <h3 class="item-description-header">Доставка</h3>
           <p>Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img class="services-img" width="136" height="164" src="./img/postman.svg" alt="Доставка">
+        </div>
+        <div class="services-list-item-description" data-services="guarantee">
+          <h3 class="item-description-header">Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <img class="services-img" width="171" height="195" src="./img/guarantee.svg" alt="Гарантия">
+        </div>
+        <div class="services-list-item-description" data-services="credit">
+          <h3 class="item-description-header">Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+          <img class="services-img" width="156" height="188" src="./img/credit.svg" alt="Кредит">
         </div>
       </div>
     </section>

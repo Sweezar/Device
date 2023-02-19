@@ -110,3 +110,26 @@ function switchSlider() {
     viewSliderCount == i ? elem.classList.add('slider-container-view'): '';
   });
 }
+
+// переключение описания в блоке сервиса
+const servicesList = document.querySelector('.services-list');
+const services = servicesList.querySelectorAll('.services-list-item');
+const servicesDescription = document.querySelectorAll('.services-list-item-description');
+
+servicesList.addEventListener('click', servicesHandler);
+
+function servicesHandler(evt) {
+  evt.preventDefault();
+
+  if (evt.target.classList.contains('services-list-item')) {
+    services.forEach((item) => item.classList.remove('services-list-item-current'));
+    evt.target.classList.add('services-list-item-current');
+
+    servicesDescription.forEach((item) => {
+      item.dataset.services === evt.target.dataset.services ?
+        item.classList.add('services-description-current') :
+        item.classList.remove('services-description-current');
+    })
+  }
+
+}
